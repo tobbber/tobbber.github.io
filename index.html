@@ -1,1 +1,89 @@
-Ayy
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>new</title>
+    <style type="text/css">
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            height: 95%;
+            min-height: 95%;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(32, 32, 32);
+        }
+
+        body {
+            margin-top: 10%;
+        }
+
+        .header {
+            font-family: "Courier New", "Courier", monospace;
+            font-size: xx-large;
+            padding-bottom: 30px;
+            color: lightgray;
+        }
+
+        .searchform {
+            font-size: large;
+        }
+
+        .searchbar {
+            width: auto;
+            padding: 10px;
+            background-color: lightgray;
+            border: 0px;
+            box-shadow: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+        }
+
+        .searchbar:focus {
+            background-color: white;
+        }
+
+        .button {
+
+            color: black;
+            background-color: yellowgreen;
+            border: 0px;
+            padding: 10px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 id="headline" class="header">a minimal start page</h1>
+        </header>
+
+        <div id="formwrapper">
+            <form id="searchForm" name="searchForm" action="http://google.com/search">
+                <input name="q" id="q" class="searchbar" placeholder="search..." type="text" maxlength="200"
+                    autofocus />
+                <input id="submit" name="submit" class="button" type="submit" value="go!" />
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
